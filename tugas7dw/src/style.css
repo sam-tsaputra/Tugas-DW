@@ -1,0 +1,104 @@
+/* Menggunakan Tailwind secara umum */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7fafc; /* Set background-color lebih terang */
+}
+
+/* Styling untuk header aplikasi */
+h1 {
+  font-size: 2rem; /* 3xl dari Tailwind */
+  font-weight: 600; /* Font-semibold */
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #2d3748; /* Text-gray-800 */
+}
+
+/* Styling untuk Input Nama Pengguna */
+#session-container {
+  max-width: 32rem; /* max-w-lg dari Tailwind */
+  margin: 0 auto; /* Centering */
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 0.75rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  margin-bottom: 2rem;
+}
+
+#session-container input {
+  width: 93%;
+  padding: 1rem;
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+#session-container button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #4299e1; /* bg-blue-500 */
+  color: #ffffff;
+  border: none;
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#session-container button:hover {
+  background-color: #3182ce; /* hover:bg-blue-600 */
+}
+
+/* Form Tambah Buku */
+#form-tambah-buku {
+  max-width: 32rem; /* max-w-lg */
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  margin-bottom: 2rem;
+}
+
+#form-tambah-buku input {
+  width: 93%;
+  padding: 1rem;
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+#form-tambah-buku button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #4299e1; /* bg-blue-500 */
+  color: #ffffff;
+  border: none;
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#form-tambah-buku button:hover {
+  background-color: #3182ce; /* hover:bg-blue-600 */
+}
+
+/* Styling Daftar Buku dan Buku Favorit */
+h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#daftar-buku,
+#buku-favorit {
+  max-width: 32rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  margin-bottom: 2rem;
+}
