@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Tailwind CSS - Grid Layout dan Dark Mode</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <body class="font-sans">
+      <header class="bg-primary text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Galeri Foto</h1>
+          <button id="background-toggle" class="btn toggle-background">
+            Ganti Background
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+    <main id="main-content" class="relative" style="background-image: url('img/default.jpg'); background-size: cover; background-position: center; min-height: 100vh;">
+    <!-- Konten utama -->
+    <section class="py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl text-white font-bold mb-4">Selamat Datang di Galeri Kami</h2>
+        <p class="text-lg text-white mb-8">Koleksi foto terbaik untuk Anda.</p>
+      </div>
+    </section>
+    <section class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Tambahkan semua card di sini -->
+          <!-- Card 1 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/gambar1.jpg"
+              alt="Foto 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl text-white font-semibold mb-2">Yunani</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Deskripsi singkat tentang foto 1.
+              </p>
+            </div>
+          </div>
+          <!-- Tambahkan Card 2, 3, dst. dengan struktur yang sama -->
+          <!-- Card 2 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/gambar2.jpg"
+              alt="Foto 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl text-white font-semibold mb-2">Astronot</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Deskripsi singkat tentang foto 2.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/gambar3.jpg"
+              alt="Foto 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl text-white font-semibold mb-2">Spiderman</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Deskripsi singkat tentang foto 3.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/gambar4.jpg"
+              alt="Foto 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl text-white font-semibold mb-2">Mario</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Deskripsi singkat tentang foto 4.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5-->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/gambar5.jpg"
+              alt="Foto 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl text-white font-semibold mb-2">Dragon Ball</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Deskripsi singkat tentang foto 5.
+              </p>
+            </div>
+            </div>
+            <!-- Card 6-->
+            <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="img/gambar6.jpg"
+              alt="Foto 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl text-white font-semibold mb-2">Luffy</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                Deskripsi singkat tentang foto 6.
+              </p>
+            </div>
+        </div>
+      </section>
+    </section>
+    <footer class="bg-primary text-white p-4 mt-10">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Galeri Foto. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+</body>
+<script>
+  const toggleBackground = document.getElementById("background-toggle");
+  const mainContent = document.getElementById("main-content");
+  const backgrounds = [
+    "url('img/background1.jpg')",
+    "url('img/background2.jpg')",
+  ];
+  let currentBackgroundIndex = 0;
+
+  toggleBackground.addEventListener("click", () => {
+    // Pergantian background untuk elemen <main>
+    currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+    mainContent.style.backgroundImage = backgrounds[currentBackgroundIndex];
+    mainContent.style.backgroundSize = "cover";
+    mainContent.style.backgroundPosition = "center";
+  });
+</script>
+
+  
+  <body
+    class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans"
+  >
+  </body>
+</html>
